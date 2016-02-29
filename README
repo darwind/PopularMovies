@@ -1,0 +1,8 @@
+The app uses an API key from www.tmdb.org
+You will need to create an account to acquire an API key yourself.
+
+The API key should go into the MoviesAsyncTaskLoader as that is the only place where the API key is used.
+
+Look at line 51 where it needs to be inserted instead of the text [insert API key here].
+
+I haven't specified the key as a static variable as it's generally bad practice for security reasons to store private keys in either static fields or the Strings.xml for instance.
